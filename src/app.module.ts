@@ -8,7 +8,7 @@ const URI =
   'mongodb://root:root@localhost:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false';
 
 @Module({
-  imports: [MongooseModule.forRoot(URI), ContactModule],
+  imports: [MongooseModule.forRoot('mongodb://localhost/nest'), ContactModule],
   controllers: [AppController],
   providers: [AppService],
 })
